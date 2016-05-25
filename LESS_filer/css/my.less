@@ -1,0 +1,78 @@
+
+@aColor: blue;
+            
+
+
+
+            #circle {
+                 width: 150px;
+                 height: 150px;
+                 border-radius: 50%; /* To create circle */
+                 background-color:  @aColor;
+                 margin: 10px,
+              }
+
+              .square {
+                 width: 150px;
+                 height: 150px;
+                 background-color: @aColor;
+                 margin: 10px;
+              }
+
+              .square2 {
+                width: 150px;
+                height: 150px;
+                background-color: @aColor;
+                margin: 10px;
+              }
+
+
+
+
+
+
+
+            .base {
+                 border-radius: 50%; /* To create circle */
+                 background-color:  @aColor;
+                 margin: 10px;
+              }
+
+           .baseSmall {
+                .base;
+                width:  50px;
+                height: 50px;
+            }
+
+             .baseBig {
+                .base;
+                width:  250px;
+                height: 250px;
+            }
+
+
+
+            @buttonBackground: #134d00;
+            @buttonColor: #ffff00;
+            @buttonPadding: 10px;
+
+            .button{
+              background: @buttonBackground;
+              color: @buttonColor;
+              padding: @buttonPadding;
+              display: inline-block;
+              border-radius: 4px;
+            }
+
+            .jumbo-button{
+              .button;
+              padding: @buttonPadding + 60;
+            }
+
+            .light-button{
+              .button;
+              background: @buttonBackground * 4;
+            }
+
+
+    
